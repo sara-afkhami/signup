@@ -32,14 +32,14 @@ function App() {
       <h1 className="font-Snaap text-purple-default">آکادمی نقطه</h1>
             <h3>لطفا اطلاعات خود را وارد کنید</h3>
         <form>{formBodyCreator(stepNumber)}</form>
-        {/* <div className="buttons"> */}
+        <div className="btns">
         <button className="btn1" type="button" onClick={() => nextStageHandler()}>
           مرحله بعد
         </button>
         <button type="button" onClick={() => previousStageHandler()}>
           مرحله قبل
         </button>
-        {/* </div> */}
+        </div>
       </div>
     </div>
   );
