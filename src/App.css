@@ -1,0 +1,60 @@
+.login--background{
+    background-image: url("./assets/class.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    direction: rtl;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ @font-face {
+    font-family: Snaap;
+    src: url("./fonts/Snaap.ttf");
+    font-family: IRANSans_Bold;
+    src: url("./fonts/IRANSans/IRANSans_Bold.ttf");
+  }
+
+  *{
+      font-family: IRANSans_Bold;
+    }
+h1{
+    font-family: snaap;
+    color: #775cd9;
+}
+.login--form{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .9);
+    margin: auto;
+    height: "676px";
+    width: 500px;
+    border-radius: 16px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+input , button{
+    margin: 8px 0;
+    padding: 8px 8px;
+    border-radius: 8px;
+
+}
+input{
+    width: 300px;
+    border: 1px solid #ccc7dd;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+button{
+    width: 100px;
+    background-color: #775cd9;
+    color: white;
+    border: none;
+
+}

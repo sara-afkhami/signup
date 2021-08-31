@@ -1,0 +1,90 @@
+$color1 : white;
+$color2 : black;
+$color3 : #775cd9;
+$color4 : #c7c7dd;
+$color5 : #707070;
+$button-input-width : 300px;
+
+@font-face {
+    font-family: Snaap;
+    src: url("./fonts/Snaap.ttf");
+    
+}
+@font-face {
+    font-family: IRANSans_Bold;
+    src: url("./fonts/IRANSans/IRANSans_Bold.ttf");
+}
+
+@mixin common-button-input {
+    margin: 8px 0;
+    padding: 8px 8px;
+    border-radius: 8px;   
+}
+
+@mixin login-background {
+    background-image: url("./assets/class.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100vh;
+}
+@mixin box-features {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .95);
+    margin: auto;
+    height: '675px';
+    width: 500px;
+    border-radius: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+*{
+    font-family: IRANSans_Bold;
+}
+body{
+    direction: rtl;
+
+    .login-div{
+        @include login-background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .login-wrapper{
+            @include box-features;
+
+            h1{
+                color: $color3;
+                font-family: Snaap;
+                margin-top: 0;    
+            }
+            h3{
+                color: $color2;
+                text-align: right;
+                direction: rtl;
+            
+            }
+            button{
+                @include common-button-input;
+                width: $button-input-width + 18px;
+                background-color: $color3;
+                color: $color1;
+                border: none;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            input{
+                @include common-button-input;
+                width: $button-input-width;
+                border: 1px solid $color4;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }  
+            input[type="text"]::-webkit-input-placeholder {
+                color: $color5;
+            }
+        }  
+    }
+}
