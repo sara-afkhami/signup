@@ -58,3 +58,9 @@ button{
     border: none;
 
 }
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
